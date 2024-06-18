@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/chip_navi"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_height="55dp"
+        app:cnb_addBottomInset="false"
+        app:cnb_addLeftInset="false"
+        app:cnb_addRightInset="false"
+        app:cnb_addTopInset="false"
+        app:cnb_badgeColor="@color/colorAccent"
+        app:cnb_iconSize="24dp"
+        app:cnb_menuResource="@menu/menu_activity2"
+        app:cnb_orientationMode="horizontal"
+        app:cnb_radius="8dp"
+        android:background="@color/white"
+        android:layout_alignParentTop="true"
+        />
+
+    <FrameLayout
+        android:id="@+id/frm_admin2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/chip_navi"
+        />
+
+</RelativeLayout>
